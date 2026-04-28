@@ -1,0 +1,156 @@
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    line-height: 1.65;
+}
+
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 50px 80px;
+}
+
+/* ── DOC HEADER lE HAUT ── */
+.doc-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.doc-header h1 {
+  font-size: 14pt;
+  font-weight: bold;
+  line-height: 1.35;
+  margin-bottom: 22px;
+}
+
+.identite-specimene-deluxe-quoi {
+  font-size: 11pt;
+  text-align: left;
+  line-height: 2;
+  margin-bottom: 18px;
+}
+
+/* ── TOC TOC WHO── */
+.toc { margin-bottom: 32px; }
+
+.toc-heading {
+  font-size: 11pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.toc-list { list-style: none; padding: 0; }
+
+.toc-list li { font-size: 10.5pt; margin-bottom: 2px; }
+
+.toc-line {
+  display: flex;
+  align-items: flex-end;
+}
+
+.toc-dots {
+  flex: 1;
+  border-bottom: 1px dotted #000;
+  margin: 0 5px;
+  margin-bottom: 3px;
+}
+
+/* ── HEADINGS THE BALD HEAD── */
+h2.section {
+  font-size: 11pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 26px 0 10px;
+}
+
+h3.subsection {
+  font-size: 11pt;
+  font-weight: bold;
+  font-style: italic;
+  margin: 16px 0 7px;
+}
+
+/* ── TEXT ── */
+p {
+  text-align: justify;
+  margin-bottom: 10px;
+  font-size: 11pt;
+  hyphens: auto;
+}
+
+p.retrait { text-indent: 28px; }
+
+/* ── LISTS ── */
+ul {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  list-style: disc;
+}
+
+ul li {
+  font-size: 11pt;
+  margin-bottom: 3px;
+  text-align: justify;
+}
+
+/* ── EQUATIONS 2 HOURS JUST THIS── */
+.equation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 12px 0;
+  font-size: 11pt;
+  font-style: italic;
+}
+
+/* ── TABLOS ── */
+.table-block { margin: 18px 0; }
+
+.table-caption {
+  font-size: 11pt;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10.5pt;
+}
+
+thead tr {
+  border-top: 1.5px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+tbody tr:last-child { border-bottom: 1.5px solid #000; }
+
+th {
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: bold;
+  background: none;
+}
+
+td { padding: 5px 10px; text-align: center; }
+
+td.left, th.left { text-align: left; }
+
+/* ── FOOTER ── */
+.doc-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+  margin-top: 56px;
+  padding-top: 4px;
+  font-size: 9.5pt;
+}
+
+@media print {
+  .page { padding: 40px 50px; }
+}
