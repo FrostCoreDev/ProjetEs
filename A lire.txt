@@ -1,4 +1,4 @@
 Ne pas déplacer les éléments hors de ce dossier, sinon des erreurs peuvent se produire.
 En cas d'erreur, veuillez les remettre dans ce dossier.
 
-Le rapport est dans le fichier "Rapport de l'expérience.html" ou "https://frostcoredev.github.io/ProjetEs/"
+Le rapport est dans le fichier "Rapport de l'expérience.html" ou le lien suivant "https://frostcoredev.github.io/ProjetEs/"
