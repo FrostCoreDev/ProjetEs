@@ -141,6 +141,11 @@ td { padding: 5px 10px; text-align: center; }
 
 td.left, th.left { text-align: left; }
 
+/*Graph Annexe*/
+img {
+  border: 2px solid #000000; /* 5px wide solid gray border */
+}
+
 /* ── FOOTER ── */
 .doc-footer {
   display: flex;
