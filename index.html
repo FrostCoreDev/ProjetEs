@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rapport Enseignement Scientifique | Vitesse du Son</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="icon.jpg" type="image/png">
+<link rel="stylesheet" href="Ressources/style.css">
+<link rel="icon" href="Ressources/icon.jpg" type="image/png">
 </head>
 <body>
 <div class="page">
@@ -24,7 +24,7 @@
     <div class="toc-heading">Table des matières</div>
     <ul class="toc-list">
       <li><div class="toc-line"><span>1  Résumé</span><span class="toc-dots"></span><span>1</span></div></li>
-      <li><div class="toc-line"><span>2  Introduction</span><span class="toc-dots"></span><span>2</span></div></li>
+      <li><div class="toc-line"><span>2  Introduction et Problématique</span><span class="toc-dots"></span><span>2</span></div></li>
       <li><div class="toc-line"><span>3  Matériel utilisé</span><span class="toc-dots"></span><span>3</span></div></li>
       <li><div class="toc-line"><span>4  Protocole expérimental</span><span class="toc-dots"></span><span>4</span></div>
         <li><div class="toc-line"><span>4.1  Dans l'air (21 °C)</span><span class="toc-dots"></span><span>4.1</span></div></li>
@@ -45,12 +45,12 @@
   <h2 class="section">1 Résumé</h2>
   <p class="retrait">
     Le but de cette expérience est de comparer la vitesse du son dans l'air et dans l'eau avec 
-    deux téléphones utilisant l'application Fizziq (un téléphone émetteur qui produit le son, et un téléphone capteur qui enregistre le son lors du commencement). 
+    deux téléphones utilisant l'application Fizziq un téléphone émetteur qui produit le son, et un téléphone capteur qui enregistre le son lors du commencement. 
     Lors de cette expérience nous avons obtenus que le son se propage beaucoup plus vite dans l'eau que dans l'air.
   </p>
 
-  <!-- 2. INTRODUCTION -->
-  <h2 class="section">2 Introduction</h2>
+  <!-- 2. Introduction et Problématique -->
+  <h2 class="section">2 Introduction et Problématique</h2>
   <p class="retrait">
     Le son se propage par ondes mécaniques qui nécessitent un milieu matériel et que
     l'air étant moins dense que l'eau, nous avons poser une question et essayer de comparer la vitesse du son dans l'air et dans l'eau.
@@ -60,9 +60,11 @@
 
   <!-- 3. MATÉRIEL -->
   <h2 class="section">3 Matériel utilisé</h2>
+  <p>Nous allons utiliser le matériel suivant :</p>
   <ul>
-    <li>2 téléphones avec l'application Fizziq.</li>
-    <li>Un récipient rempli d'eau (Piscine).</li>
+    <li>téléphones (waterproof) avec l'application Fizziq. (capteur)</li>
+    <li>téléphones (waterproof) avec l'application Fizziq. (émetteur)</li>
+    <li>Un récipient rempli d'eau. (Piscine)</li>
     <li>Un mètre ruban.</li>
   </ul>
 
@@ -111,44 +113,80 @@
 
   <!-- 6. CALCULS -->
   <h2 class="section">6 Calculs</h2>
+  
+  <p><b>Formule du temps moyen:</b></p>
+  <div class="equation">
+    <span><i>t = temps total / nombre total du temps</i></span>
+  </div>
 
   <p>Temps moyen dans l'air:</p>
   <div class="equation">
-    <span><i>t̄</i><sub>air</sub> = (8,5 + 9,1 + 8,8) / 3 = <b>8,8 ms</b></span>
+    <span><i>t</i><sub> moyen air</sub> = (8,5 + 9,1 + 8,8) / 3 ≈ <b>8,8 ms</b></span>
   </div>
 
   <p>Temps moyen dans l'eau:</p>
   <div class="equation">
-    <span><i>t̄</i><sub>eau</sub> = (2,1 + 1,9 + 2,2) / 3 = <b>2,1 ms</b></span>
-  </div>
+    <span><i>t</i><sub>moyen eau</sub> = (2,1 + 1,9 + 2,2) / 3 ≈ <b>2,1 ms</b></span>
+  </div><br>
 
-  <p>Formule utilisée avec une distance de 3m</p>
+  <p><b>Formule de la vitesse utilisée avec une distance de 3m:</b></p>
   <div class="equation">
     <span><i>v = d / t (mètre en seconde)</i></span>
   </div>
 
   <p>Vitesse dans l'air :</p>
   <div class="equation">
-    <span><i>v</i><sub>air</sub> = 3 / 8.8*10^-3 = <b>341 m/s</b></span>
+    <span><i>v</i><sub>air</sub> = 3 / 8.8*10³ ≈ <b>341 m/s</b></span>
   </div>
 
   <p>Vitesse dans l'eau :</p>
   <div class="equation">
-    <span><i>v</i><sub>eau</sub> = 3 / 2.1*10^-3 = <b>1429 m/s</b></span>
+    <span><i>v</i><sub>eau</sub> = 3 / 2.1*10³ ≈ <b>1429 m/s</b></span>
+  </div><br>
+
+  <p><b>Formule de l'écart-type :</b></p>
+  <div class="equation">
+    <span><i>σ = √( Σ(xᵢ − x̄)² / n )</i></span>
+  </div>
+
+  <p>Ecart-type dans l'air :</p>
+  <div class="equation">
+    <span>
+      <i>σ</i><sub>air</sub> = √( (8,5−8,8)² + (9,1−8,8)² + (8,8−8,8)² ) / 3<br>
+        = √( 0,09 + 0,09 + 0 ) / 3<br>
+        = √0,06<br>
+        ≈ <b>0,24 ms</b>
+    </span>
+  </div>
+
+  <p>Ecart-type dans l'eau :</p>
+  <div class="equation">
+    <span>
+      <i>σ</i><sub>eau</sub> = √( (2,1−2,07)² + (1,9−2,07)² + (2,2−2,07)² ) / 3<br>
+        = √( 0,001 + 0,029 + 0,017 ) / 3<br>
+        = √0,016<br>
+        ≈ <b>0,12 ms</b>
+    </span>
   </div>
 
   <!-- 7. GRAPHIQUE -->
   <h2 class="section">7 Graphique</h2>
-  <img src="Graph1.png" alt="Graphique des temps de propagation du son dans l'air et dans l'eau" width="400" height="225">
-  <img src="Graph2.png" alt="Graphique de vitesse du son dans l'air et dans l'eau" width="400" height="225">
+  <p><u>Graphique des temps de propagation du son dans l'air et dans l'eau</u></p>
+  <img src="Ressources/Graph1.png" alt="Graphique des temps de propagation du son dans l'air et dans l'eau" width="400" height="225">
+   <p><u>Graphique de la vitesse du son dans l'air et dans l'eau</u></p>
+  <img src="Ressources/Graph2.png" alt="Graphique de vitesse du son dans l'air et dans l'eau" width="400" height="225">
 
 
   <!-- 8. ANALYSE -->
   <h2 class="section">8 Analyse</h2>
   <p class="retrait">
-    Les résultats montrent que le son se propage 4 fois (environ) plus vite dans l'eau que dans l'air. 
+    Les résultats montrent que le son se propage environ 4 fois plus vite dans l'eau que dans l'air. 
     Cela s'explique par le fait que les molécules de l'eau sont beaucoup plus proches les unes des autres 
     que dans l'air, ce qui transmet mieux les vibrations.
+    <br>
+    L’écart-type montre que les mesures sont fiables car dans l'air l'écart-type est d'environ 0,24 ms et l'écart-type dans l'eau est d'environ 0,12 ms.
+    Les résultats obtenus dans l’eau sont plus réguliers car l'écart de 0.12 ms varie peu de marge contèrement dans l'air d'écart 0.24 ms donc plus de temps pendant que des perturbations peuvent fausser la mesure
+    , ce qui indique une meilleure reproductibilité  pour dans l'eau rendant de l’expérience dans ce milieu.
   </p>
 
   <!-- 9. CONCLUSION -->
@@ -163,25 +201,25 @@
   <h2 class="section">10 Annexe</h2>
   <div style="margin-top:14px;">
     <p>Figure 1: Montage expérimental de l'air</p>
-    <img src="Expérience reprise1.png" alt="Description de l'image" width="175" height="400">
+    <img src="Ressources/Expérience reprise1.png" alt="Montage expérimental de l'air" width="175" height="400">
   </div>
   <div style="margin-top:14px;">
     <p class="figure-caption">Figure 2: Montage expérimental de l'eau (2 sujets)</p>
-    <img src="Expérience reprise2.png" alt="Description de l'image" width="245" height="400">
+    <img src="Ressources/Expérience reprise2.png" alt="Montage expérimental de l'eau" width="245" height="400">
   </div>
 
   <!-- 11. SOURCES D'ERREUR -->
   <h2 class="section">11 Sources d'erreur</h2>
   <ul>
     <li>Seulement trois mesures réalisées.</li>
-    <li>Positionnement des téléphones non précise (ils ont froit)(eau).</li>
+    <li>Positionnement des téléphones dans le montage de l'eau imprécis.</li>
     <li>Température de l'eau non contrôlée.</li>
   </ul>
 
   <!-- 12. Remerciement -->
   <h2 class="section">12 Remerciement</h2>
   <p class="retrait">
-    Je remercie sincèrement mon oncle pour ton aide et ta gentillesse de m’avoir permis d’utiliser ta piscine.
+    Je remercie sincèrement mon oncle pour son aide et sa gentillesse de m'avoir permis d’utiliser sa piscine.
   </p>
 
   <!-- FOOTER -->
