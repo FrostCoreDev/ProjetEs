@@ -1,233 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rapport Enseignement Scientifique | Vitesse du Son</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="icon.jpg" type="image/png">
+    // Hello, Im gpt chat and idk (fake)
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport Enseignement Scientifique | Vitesse du Son</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            text-align: center;
+            max-width: 400px;
+            border: 2px solid #ff4d4d;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #ff4d4d;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            height: 60px;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .btn-yes {
+            background-color: #ff4d4d;
+            color: white;
+        }
+
+        .btn-yes:hover {
+            background-color: #ff1a1a;
+        }
+
+        .btn-no {
+            background-color: #4caf50;
+            color: white;
+            position: absolute;
+            right: 40px;
+        }
+
+        /* Styles pour l'image de troll qui apparaît */
+        #trollImageContainer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 10;
+        }
+
+        #trollImageContainer img {
+            max-width: 80%;
+            max-height: 70%;
+            border-radius: 10px;
+        }
+
+        #trollImageContainer h2 {
+            color: white;
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+    </style>
 </head>
 <body>
-<div class="page">
 
-  <!-- HEADER -->
-  <div class="doc-header">
-    <h1>Étude de la vitesse du son dans l'air et dans l'eau</h1>
-    <div class="identite-specimene-deluxe-quoi">
-      <b>Nom et prénom:</b> Ho Matthieu et Ramcharan Kenny<br>
-      <b>Classe:</b> 1B<br>
+    <div class="card" id="mainCard">
+        <h1>Blocker par un Ransomware</h1>
+        <p>Voulez vous regarder le rapport enseignement scientifique | Vitesse du Son ?</p>
+        <div class="buttons">
+            <button class="btn-yes" onclick="clickYes()">Non</button>
+            <button class="btn-no" id="noBtn" onmouseover="moveButton()" onclick="clickNo()">Oui</button>
+        </div>
     </div>
-  </div>
 
-  <!-- TABLE DES MATIÈRES -->
-  <div class="toc">
-    <div class="toc-heading">Table des matières</div>
-    <ul class="toc-list">
-      <li><div class="toc-line"><span>1  Résumé</span><span class="toc-dots"></span><span>1</span></div></li>
-      <li><div class="toc-line"><span>2  Introduction et Problématique</span><span class="toc-dots"></span><span>2</span></div></li>
-      <li><div class="toc-line"><span>3  Matériel utilisé</span><span class="toc-dots"></span><span>3</span></div></li>
-      <li><div class="toc-line"><span>4  Protocole expérimental</span><span class="toc-dots"></span><span>4</span></div>
-        <li><div class="toc-line"><span>4.1  Dans l'air (21 °C)</span><span class="toc-dots"></span><span>4.1</span></div></li>
-        <li><div class="toc-line"><span>4.2  Dans l'eau</span><span class="toc-dots"></span><span>4.2</span></div></li>
-      </li>
-      <li><div class="toc-line"><span>5  Résultats</span><span class="toc-dots"></span><span>5</span></div></li>
-      <li><div class="toc-line"><span>6  Calculs</span><span class="toc-dots"></span><span>6</span></div></li>
-      <li><div class="toc-line"><span>7  Graphique</span><span class="toc-dots"></span><span>7</span></div></li>
-      <li><div class="toc-line"><span>8  Analyse</span><span class="toc-dots"></span><span>8</span></div></li>
-      <li><div class="toc-line"><span>9  Conclusion</span><span class="toc-dots"></span><span>9</span></div></li>
-      <li><div class="toc-line"><span>10  Annexe</span><span class="toc-dots"></span><span>10</span></div></li>
-      <li><div class="toc-line"><span>11  Sources d'erreur</span><span class="toc-dots"></span><span>11</span></div></li>
-      <li><div class="toc-line"><span>12  Remerciement</span><span class="toc-dots"></span><span>12</span></div></li>
-    </ul>
-  </div>
+    <!-- Conteneur pour l'image de troll -->
+    <div id="trollImageContainer">
+        <img src="https://wallpapers.com/images/hd/trollface-meme-classic-kkgtoxdnlpnps08e.jpg" alt="Troll Face">
+        <h2>Indisponible (Raison: Fermer)</h2>
+    </div>
 
-  <!-- 1. RÉSUMÉ -->
-  <h2 class="section">1 Résumé</h2>
-  <p class="retrait">
-    Le but de cette expérience est de comparer la vitesse du son dans l'air et dans l'eau avec 
-    deux téléphones utilisant l'application Fizziq un téléphone émetteur qui produit le son, et un téléphone capteur qui enregistre le son lors du commencement. 
-    Lors de cette expérience nous avons obtenus que le son se propage beaucoup plus vite dans l'eau que dans l'air.
-  </p>
+    <script>
+        function moveButton() {
+            const btn = document.getElementById('noBtn');
+            
+            // Déplace le bouton à une position aléatoire
+            const x = Math.random() * (window.innerWidth - btn.clientWidth);
+            const y = Math.random() * (window.innerHeight - btn.clientHeight);
 
-  <!-- 2. Introduction et Problématique -->
-  <h2 class="section">2 Introduction et Problématique</h2>
-  <p class="retrait">
-    Le son se propage par ondes mécaniques qui nécessitent un milieu matériel et que
-    l'air étant moins dense que l'eau, nous avons poser une question et essayer de comparer la vitesse du son dans l'air et dans l'eau.
-    <br><br>
-    Pourquoi la vitesse du son dans l'air est plus vite que dans l'eau ?
-  </p>
+            btn.style.position = 'fixed';
+            btn.style.left = x + 'px';
+            btn.style.top = y + 'px';
+        }
 
-  <!-- 3. MATÉRIEL -->
-  <h2 class="section">3 Matériel utilisé</h2>
-  <p>Nous allons utiliser le matériel suivant :</p>
-  <ul>
-    <li>téléphones (waterproof) avec l'application Fizziq. (capteur)</li>
-    <li>téléphones (waterproof) avec l'application Fizziq. (émetteur)</li>
-    <li>Un récipient rempli d'eau. (Piscine)</li>
-    <li>Un mètre ruban.</li>
-  </ul>
+        function clickYes() {
+	    window.open("https://pixabay.com/fr/photos/search/chats/", "_blank");
+            setTimeout(() => {
+                alert("<Manifest.Syntax.line: '67'> Erreur ?");
+            }, 500);
+        }
 
-  <!-- 4. PROTOCOLE -->
-  <h2 class="section">4 Protocole expérimental</h2>
+        function clickNo() {
+            document.getElementById('mainCard').style.display = 'none';
+            document.getElementById('trollImageContainer').style.display = 'flex';
+        }
+    </script>
 
-  <h3 class="subsection">4.1 Dans l'air (21 °C)</h3>
-  <p>
-    -Le téléphone capteur est placé à 3 mètres du téléphone émetteur. <br>
-    -Le téléphone émetteur émet un son. <br>
-    -L'application Fizziq mesure le temps de propagation. <br>
-    -Trois mesures sont réalisées.
-  </p>
-
-  <h3 class="subsection">4.2 Dans l'eau</h3>
-  <p>
-    -Le téléphone est placé dans l'eau (Piscine) et sert de capteur. <br>
-    -Le téléphone émetteur reste à 3 mètres. <br>
-    -L'application Fizziq mesure le temps de propagation. <br>
-    -Trois nouvelles mesures sont réalisées.
-  </p>
-
-  <!-- 5. RÉSULTATS -->
-  <h2 class="section">5 Résultats</h2>
-  <p class="retrait">
-    Les temps de propagation mesurés sont rassemblés dans le Tableau.
-  </p>
-
-  <div class="table-block">
-    <div class="table-caption">Tableau: Temps de propagation du son dans l'air et dans l'eau (<i>d</i>= 3m)</div>
-    <table>
-      <thead>
-        <tr>
-          <th class="left">Milieu</th>
-          <th>Mesure 1 (ms)</th>
-          <th>Mesure 2 (ms)</th>
-          <th>Mesure 3 (ms)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="left">Air</td><td>8,5</td><td>9,1</td><td>8,8</td></tr>
-        <tr><td class="left">Eau</td><td>2,1</td><td>1,9</td><td>2,2</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- 6. CALCULS -->
-  <h2 class="section">6 Calculs</h2>
-  
-  <p><b>Formule du temps moyen:</b></p>
-  <div class="equation">
-    <span><i>t = temps total / nombre total du temps</i></span>
-  </div>
-
-  <p>Temps moyen dans l'air:</p>
-  <div class="equation">
-    <span><i>t</i><sub> moyen air</sub> = (8,5 + 9,1 + 8,8) / 3 ≈ <b>8,8 ms</b></span>
-  </div>
-
-  <p>Temps moyen dans l'eau:</p>
-  <div class="equation">
-    <span><i>t</i><sub>moyen eau</sub> = (2,1 + 1,9 + 2,2) / 3 ≈ <b>2,1 ms</b></span>
-  </div><br>
-
-  <p><b>Formule de la vitesse utilisée avec une distance de 3m:</b></p>
-  <div class="equation">
-    <span><i>v = d / t (mètre en seconde)</i></span>
-  </div>
-
-  <p>Vitesse dans l'air :</p>
-  <div class="equation">
-    <span><i>v</i><sub>air</sub> = 3 / 8.8*10³ ≈ <b>341 m/s</b></span>
-  </div>
-
-  <p>Vitesse dans l'eau :</p>
-  <div class="equation">
-    <span><i>v</i><sub>eau</sub> = 3 / 2.1*10³ ≈ <b>1429 m/s</b></span>
-  </div><br>
-
-  <p><b>Formule de l'écart-type :</b></p>
-  <div class="equation">
-    <span><i>σ = √( Σ(xᵢ − x̄)² / n )</i></span>
-  </div>
-
-  <p>Ecart-type dans l'air :</p>
-  <div class="equation">
-    <span>
-      <i>σ</i><sub>air</sub> = √( (8,5−8,8)² + (9,1−8,8)² + (8,8−8,8)² ) / 3<br>
-        = √( 0,09 + 0,09 + 0 ) / 3<br>
-        = √0,06<br>
-        ≈ <b>0,24 ms</b>
-    </span>
-  </div>
-
-  <p>Ecart-type dans l'eau :</p>
-  <div class="equation">
-    <span>
-      <i>σ</i><sub>eau</sub> = √( (2,1−2,07)² + (1,9−2,07)² + (2,2−2,07)² ) / 3<br>
-        = √( 0,001 + 0,029 + 0,017 ) / 3<br>
-        = √0,016<br>
-        ≈ <b>0,12 ms</b>
-    </span>
-  </div>
-
-  <!-- 7. GRAPHIQUE -->
-  <h2 class="section">7 Graphique</h2>
-  <p><u>Graphique des temps de propagation du son dans l'air et dans l'eau</u></p>
-  <img src="Graph1.png" alt="Graphique des temps de propagation du son dans l'air et dans l'eau" width="400" height="225">
-   <p><u>Graphique de la vitesse du son dans l'air et dans l'eau</u></p>
-  <img src="Graph2.png" alt="Graphique de vitesse du son dans l'air et dans l'eau" width="400" height="225">
-
-
-  <!-- 8. ANALYSE -->
-  <h2 class="section">8 Analyse</h2>
-  <p class="retrait">
-    Les résultats montrent que le son se propage environ 4 fois plus vite dans l'eau que dans l'air. 
-    Cela s'explique par le fait que les molécules de l'eau sont beaucoup plus proches les unes des autres 
-    que dans l'air, ce qui transmet mieux les vibrations.
-    <br>
-    L’écart-type montre que les mesures sont fiables car dans l'air l'écart-type est d'environ 0,24 ms et l'écart-type dans l'eau est d'environ 0,12 ms.
-    Les résultats obtenus dans l’eau sont plus réguliers car l'écart de 0.12 ms varie peu de marge contèrement dans l'air d'écart 0.24 ms donc plus de temps pendant que des perturbations peuvent fausser la mesure
-    , ce qui indique une meilleure reproductibilité  pour dans l'eau rendant de l’expérience dans ce milieu.
-  </p>
-
-  <!-- 9. CONCLUSION -->
-  <h2 class="section">9 Conclusion</h2>
-  <p class="retrait">
-    Cette expérience a permis de comparer la vitesse du son dans deux milieux différents entre l'air et l'eau. 
-    Nous avons trouvé dans l'air <b>341 m/s</b> et dans l'eau <b>1429 m/s</b>. 
-    Donc la problématique que nous avons posée est fausse car la vitesse du son dans l'eau va beaucoup plus vite que la vitesse du son dans l'air.
-  </p>
-
-  <!-- 10. ANNEXE -->
-  <h2 class="section">10 Annexe</h2>
-  <div style="margin-top:14px;">
-    <p>Figure 1: Montage expérimental de l'air</p>
-    <img src="Expérience reprise1.png" alt="Montage expérimental de l'air" width="175" height="400">
-  </div>
-  <div style="margin-top:14px;">
-    <p class="figure-caption">Figure 2: Montage expérimental de l'eau (2 sujets)</p>
-    <img src="Expérience reprise2.png" alt="Montage expérimental de l'eau" width="245" height="400">
-  </div>
-
-  <!-- 11. SOURCES D'ERREUR -->
-  <h2 class="section">11 Sources d'erreur</h2>
-  <ul>
-    <li>Seulement trois mesures réalisées.</li>
-    <li>Positionnement des téléphones dans le montage de l'eau imprécis.</li>
-    <li>Température de l'eau non contrôlée.</li>
-  </ul>
-
-  <!-- 12. Remerciement -->
-  <h2 class="section">12 Remerciement</h2>
-  <p class="retrait">
-    Je remercie sincèrement mon oncle pour son aide et sa gentillesse de m'avoir permis d’utiliser sa piscine.
-  </p>
-
-  <!-- FOOTER -->
-  <div class="doc-footer">
-    <span>Expérience | Vitesse du Son</span>
-    <span>Rapport Enseignement Scientifique</span>
-  </div>
-
-</div>
 </body>
 </html>
